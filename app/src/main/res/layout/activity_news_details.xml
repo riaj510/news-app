@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsDetails"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/newsDetailsImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gopalganj"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/newsDetailsImage"
+            android:background="#41000000">
+
+            <TextView
+                android:id="@+id/newsDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:maxLines="2"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="অবসর নিয়ে ‘কিন্তু’ রেখে দিলেন সেরেনা অবসর নিয়ে ‘কিন্তু’ রেখে দিলেন সেরেনা অবসর নিয়ে ‘কিন্তু’ রেখে দিলেন সেরেনা"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tvNewsDetailDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="#B5FAF3"
+                android:text="হারের পর কোর্টে তাঁর কাছে জানতে চাওয়া হয়েছিল, অবসর নেওয়ার সিদ্ধান্ত থেকে সরে আসবেন কি না? বিষয়টি নিয়ে আরেকবার ভাবা যায় কি না? ভেজা চোখে ৪০ বছর বয়সী সেরেনা উইলিয়ামসের উত্তর, ‘আমার মনে হয় না। তবে বলা তো যায় না! হারের পর কোর্টে তাঁর কাছে জানতে চাওয়া হয়েছিল, অবসর নেওয়ার সিদ্ধান্ত থেকে সরে আসবেন কি না? বিষয়টি নিয়ে আরেকবার ভাবা যায় কি না? ভেজা চোখে ৪০ বছর বয়সী সেরেনা উইলিয়ামসের উত্তর, ‘আমার মনে হয় না।
+         \n \nতবে বলা তো যায় না!হারের পর কোর্টে তাঁর কাছে জানতে চাওয়া হয়েছিল, অবসর নেওয়ার সিদ্ধান্ত থেকে সরে আসবেন কি না? বিষয়টি নিয়ে আরেকবার ভাবা যায় কি না? ভেজা চোখে ৪০ বছর বয়সী সেরেনা উইলিয়ামসের উত্তর, ‘আমার মনে হয় না। \n\n তবে বলা তো যায় না!হারের পর কোর্টে তাঁর কাছে জানতে চাওয়া হয়েছিল, অবসর নেওয়ার সিদ্ধান্ত থেকে সরে আসবেন কি না? বিষয়টি নিয়ে আরেকবার ভাবা যায় কি না? ভেজা চোখে ৪০ বছর বয়সী সেরেনা উইলিয়ামসের উত্তর, ‘আমার মনে হয় না। তবে বলা তো যায় না!"
+                android:textAlignment="textStart"
+                android:textColor="#272121" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/faButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/microphone"
+        app:fabSize="mini"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+
+</RelativeLayout>

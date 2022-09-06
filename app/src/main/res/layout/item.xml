@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/bottom_shade"
+    android:padding="5dp"
+    android:id="@+id/layListView"
+    android:listSelector="@android:color/transparent"
+    android:clickable="true"
+    >
+
+    <ImageView
+        android:id="@+id/ivThumb"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/gopalganj"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:gravity="left|center"
+        >
+        <TextView
+            android:id="@+id/tvIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tenis"
+            android:background="#C0CA33"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="অবসর নিয়ে ‘কিন্তু’ রেখে দিলেন সেরেনা অবসর নিয়ে ‘কিন্তু’ রেখে দিলেন সেরেনা অবসর নিয়ে ‘কিন্তু’ রেখে দিলেন সেরেনা"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#201F1F"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:id="@+id/tvdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="হারের পর কোর্টে তাঁর কাছে জানতে চাওয়া হয়েছিল, অবসর নেওয়ার সিদ্ধান্ত থেকে সরে আসবেন কি না? বিষয়টি নিয়ে আরেকবার ভাবা যায় কি না? ভেজা চোখে ৪০ বছর বয়সী সেরেনা উইলিয়ামসের উত্তর, ‘আমার মনে হয় না। তবে বলা তো যায় না!"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
